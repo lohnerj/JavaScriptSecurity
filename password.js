@@ -6,10 +6,11 @@ const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
+
 let userEmail;
 let userPass;
 let check;
-let passwordArray;
+
 
 
 // Read from password.enc.txt
