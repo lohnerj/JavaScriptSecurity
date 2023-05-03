@@ -1,0 +1,2 @@
+1. I made all the applications using the utility.js functions and they pass the  acceptance tests.
+2. I made unit tests for functions in makepassword.js and passwordjs.js.
