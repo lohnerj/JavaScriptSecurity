@@ -1,1 +1,26 @@
-]  I made design documents and I stored it in my project.
+Module Description:
+makepasswd.js-
+Input: A file named password.txt.
+Input: A password.txt file with emails and passwords in the format email:password. The length and amount do not matter.
+Input: A secret key, which encrypts your information so only you can decrypt it.
+
+Output: A file named password.enc.txt
+Output: password.enc.txt contains information in the email:hash format
+
+password.js-
+Input: User email
+Input: User password
+Input: password.enc.txt file in the format email:hash
+Input: a secret key used to encrypt password.enc.txt
+
+Output: Returns true or false if the user email and password matched with decrypted information from the password.enc.txt file
+
+
+Information:
+The initial information is read using the fs, or FileSync module. It is then put into an array and split by empty lines to differentiate
+between different emails and passwords. It is then mapped by splitting apart the email and password by the ':'. A cipher is then created
+by a secret key, and each email/password is given a new hash. This email:hash combo is written into a new file called password.enc.txt.
+The information is then read by the password.js program. The password.js program also introduced more data, being the user input. The input
+is stored in a new variable that combines both the email and the password into the same format as found in the password.enc.txt and password.txt
+files. The information in the password.enc.txt file is then decrypted using the secret key, and stored in a new array. Finally, we check the new
+decrypted array to see if there is an exact match with the user information.

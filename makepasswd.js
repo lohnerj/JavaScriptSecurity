@@ -1,6 +1,6 @@
 const fs = require('fs');
 const crypto = require('crypto');
-
+encryptPassword()
 function encryptPassword() {
 // Read from password.txt
     const passwordData = fs.readFileSync('password.txt', 'utf-8');

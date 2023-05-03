@@ -1,1 +1,14 @@
-]  I wrote requirements using  User Stories and stored it in my project.
+Epic:
+As a user, I want to be able to encrypt my information in order to be more secure.
+
+User:
+As a user, I would like to be able to encrypt many lines of information in order to save time.
+As a user, I would like to be able to encrypt entire files to easily move information.
+
+Epic:
+As a user, I want to be able to decrypt my information in order to not lose it.
+
+User:
+As a user, I would like to be able to retrieve my information that I previously encrypted too not lose it.
+As a user, I would like to be the only one to decrypt my information to be more secure.
+As a user, I would like to be able to decrypt my information in different places for more ease of use.
